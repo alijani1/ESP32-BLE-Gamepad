@@ -1,7 +1,7 @@
 # ESP32-BLE-Gamepad
 Forked from https://github.com/lemmingDev/ESP32-BLE-Gamepad
 
-Bluetooth LE Gamepad library for the ESP32 with Dual Joystick Support
+Bluetooth LE Gamepad library for the ESP32 with Dual Joystick Support and simplified for 5 button and 2 axes for retro Atari Joysticks
 
 This library allows you to make the ESP32 act as a Bluetooth Gamepad and control what it does. E.g. move axes and press buttons
 
