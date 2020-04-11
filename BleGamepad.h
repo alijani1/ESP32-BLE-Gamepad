@@ -32,7 +32,8 @@ public:
   void begin(void);
   void end(void);
   void setAxes(signed char x, signed char y);
-  void setAxes2(signed char x, signed char y, uint8_t b);
+  void setStick(signed char x, signed char y, uint8_t b);
+  void setStick2(signed char x, signed char y, uint8_t b);
   void press(uint16_t b = BUTTON_1);   // press BUTTON_1 by default
   void release(uint16_t b = BUTTON_1); // release BUTTON_1 by default
   bool isPressed(uint16_t b = BUTTON_1); // check BUTTON_1 by default

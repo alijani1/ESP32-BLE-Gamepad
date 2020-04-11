@@ -115,7 +115,7 @@ void BleGamepad::setAxes(signed char x, signed char y)
   }
 }
 
-void BleGamepad::setAxes2(signed char x, signed char y, uint8_t b )
+void BleGamepad::setStick2(signed char x, signed char y, uint8_t b )
 {
   if (this->isConnected())
   {
@@ -127,6 +127,20 @@ void BleGamepad::setAxes2(signed char x, signed char y, uint8_t b )
     this->inputGamepad2->notify();
   }
 }
+
+void BleGamepad::setStick(signed char x, signed char y, uint8_t b )
+{
+  if (this->isConnected())
+  {
+    uint8_t m[3];
+    m[0] = b;
+    m[1] = x;
+    m[2] = y;
+    this->inputGamepad->setValue(m, sizeof(m));
+    this->inputGamepad->notify();
+  }
+}
+
 
 
 
