@@ -7,9 +7,9 @@ This library allows you to make the ESP32 act as a Bluetooth Gamepad and control
 
 ## Features
 
- - [x] Button press (4 buttons)
- - [x] Button release (4 buttons)
- - [x] Axes movement (2 axes (x, y) 
+ - [x] Button press (5 buttons)
+ - [x] Button release (5 buttons)
+ - [x] Axes movement (2 axes (x, y)) 
  - [ ] Point of view hat (d-pad)
  - [x] Report optional battery level to host (basically works, but it doesn't show up in Android's status bar)
  - [x] Customize Bluetooth device name/manufacturer
