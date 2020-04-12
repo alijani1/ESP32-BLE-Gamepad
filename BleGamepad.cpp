@@ -190,9 +190,10 @@ void BleGamepad::taskServer(void* pvParameter) {
   BleGamepadInstance->inputGamepad = BleGamepadInstance->hid->inputReport(1); // <-- input REPORTID from report map
   BleGamepadInstance->inputGamepad2 = BleGamepadInstance->hid->inputReport(2); // <-- input REPORTID from report map
   BleGamepadInstance->connectionStatus->inputGamepad = BleGamepadInstance->inputGamepad;
+  BleGamepadInstance->connectionStatus->inputGamepad2 = BleGamepadInstance->inputGamepad2;
 
   BleGamepadInstance->hid->manufacturer()->setValue(BleGamepadInstance->deviceManufacturer);
-  BleGamepadInstance->hid->pnp(0x02, 0x8282, 0x3201, 0x0106);
+  BleGamepadInstance->hid->pnp(0x02, 0x8282, 0x0132, 0x0106);
   BleGamepadInstance->hid->hidInfo(0x00,0x01);
 
   BLESecurity *pSecurity = new BLESecurity();
